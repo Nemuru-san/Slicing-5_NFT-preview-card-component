@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.card-container {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 0 50px hsl(217, 54%, 11%);
+}
+
+.card-img {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 10%;
+    display: block;
+}
+
+.pict-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+    border-radius: 10%;
+}
+
+.card-img:hover .pict-overlay {
+    display: block;
+}
+
+.pict-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-detail h3 {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.card-detail h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card-detail p {
+    font-weight: 300;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.price svg {
+    margin-right: 5px;
+}
+
+.eth,
+.day {
+    display: flex;
+    align-items: center;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.day {
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+}
+
+.footer-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+    margin-right: 20px;
+}
+
+.author span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.author span:hover {
+    color: hsl(178, 100%, 50%);
+}
